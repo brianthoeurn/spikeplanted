@@ -1,12 +1,13 @@
 import './Home.css'
+import jimmy from './jimmy.mp4'
 import ValorantCover from  './valorant_cover.png'
 
 function Home () {
     return (
     <div>
         <img src={ValorantCover} alt='ValorantCover' className='ValCover'/>
-        <video loop autoPlay>
-            <source src='https://cdn.discordapp.com/attachments/853891866575896586/970776627338416138/jimmy_rage_001.mp4'
+        <video width="300" height="280" controls>
+            <source src={jimmy}
             type='video/mp4'
             className='jimmy'/>
         </video>
