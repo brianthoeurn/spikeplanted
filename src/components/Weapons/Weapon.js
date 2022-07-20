@@ -1,0 +1,10 @@
+function Weapons () {
+    return (
+    <div>
+        <>Weapons</>
+    </div>
+    )
+}
+
+
+export default Weapons
