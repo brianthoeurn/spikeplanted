@@ -1,16 +1,10 @@
 import './Home.css'
-import jimmy from './jimmy.mp4'
-import ValorantCover from  './valorant_cover.png'
 
 function Home () {
     return (
     <div>
-        <img src={ValorantCover} alt='ValorantCover' className='ValCover'/>
-        <video width="300" height="280" controls>
-            <source src={jimmy}
-            type='video/mp4'
-            className='jimmy'/>
-        </video>
+        <header>Welcome to Spike Planted</header>
+        <p>Valorant is a 5v5 tactical shooter game where players will choice of 20 agents to choose from. Here you will find the general information of each agent's ability, roles they specialize in, and many more!</p>
     </div>
     )
 }

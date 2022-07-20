@@ -1,0 +1,27 @@
+
+body{
+    background: rgb(178,48,71);
+background: linear-gradient(90deg, rgba(178,48,71,1) 0%, rgba(183,49,72,1) 6%, rgba(185,50,73,1) 19%, rgba(186,50,73,1) 23%, rgba(187,50,73,1) 32%, rgba(253,68,86,1) 60%);
+    margin:0;
+}
+
+nav a {
+    text-decoration: none;
+    display: inline-block;
+}
+
+@media screen and (max-width:375px){
+
+.ValCover {
+    position: relative;
+    width:375px;
+    height:182px;
+    
+}
+
+nav a {
+    padding: 0px 0px 0px 40px;
+    margin:0;
+    font-size: .5em;
+}
+}
