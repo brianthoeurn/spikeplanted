@@ -1,26 +1,30 @@
 import { useEffect, useState } from "react";
-import { useResolvedPath } from "react-router-dom";
+
 
 function Agents() {
-  const [agent, setAgent] = useState([]);
+  const [allAgents, setallAgents] = useState([]);
   const loadAgent = () => {
-    fetch("https://valorant-api.com/v1/agents/dade69b4-4f5a-8528-247b-219e5a1facd6")
+    fetch("https://valorant-api.com/v1/agents/")
     .then ((res) => res.json())
-    .then((data) => setAgent(data.data))
+    .then((data) => setallAgents(data.data))
   };
 
   useEffect(() => {
     loadAgent();
   }, []);
 
+ let ShowAgentList = allAgents.map(item => {
+  if (item.isPlayableCharacter === true)
   return (
-    <div>
-        <img src={agent.bustPortrait} />
-        <h1>
-        {agent.displayName}
-        </h1>
-        
+    <div key={item.fullPortrait}>
+
+      <img className='allAgents' src={item.fullPortrait} alt='test'>
+        </img>
     </div>
+  )
+ })
+  return (
+    <div>{ShowAgentList}</div>
   );
 }
 
