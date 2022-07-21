@@ -38,9 +38,9 @@ const ThisAgent = () => {
                 return(
                     <React.Fragment key={i}>
                         <img src={displayIcon} alt="display_icon"/>
-                        <p>Ability Slot: {slot}</p>
-                        <p>Display Name: {displayName}</p>
-                        <p>descriptiont: {description}</p>
+                        {/* <p>{slot}</p> */}
+                        <p>{displayName}</p>
+                        <p>{description}</p>
                     </React.Fragment>
                 )
             }) 

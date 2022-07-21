@@ -1,8 +1,24 @@
+.Agents {
+    max-width:200px;
+    max-height:200px;
+}
+
+.allAgents {
+    display:flex;
+    flex-wrap:wrap-reverse;
+    justify-content: center;
+}
+
+
 @media screen and (max-width:375px){
 
     .allAgents {
+        display:flex;
+        flex-wrap: wrap;
+        justify-content: center;
         max-width:100px;
         max-height:100px;
     }
-    }
+
+}
     
