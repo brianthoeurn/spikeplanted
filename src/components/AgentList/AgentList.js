@@ -18,14 +18,14 @@ function AgentList() {
   const ShowAgentList = allAgents.map((picture) => {
     if (picture.isPlayableCharacter === true)
       return (
-        <div key={picture.fullPortrait} className='allAgents'>
+        <div key={picture.fullPortrait}>
           <Link to={"/agents/" + picture.uuid}>
-            <img className="Agents" src={picture.fullPortrait} alt="test"></img>
+              <img className="Agents" src={picture.fullPortrait} alt="test"/>
           </Link>
         </div>
       ); 
   });
-  return <div>{ShowAgentList}</div>;
+  return <div className="allAgents">{ShowAgentList}</div>;
 }
 
 export default AgentList;

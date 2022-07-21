@@ -1,24 +1,30 @@
-.Agents {
-    max-width:200px;
-    max-height:200px;
-}
-
 .allAgents {
-    display:flex;
-    flex-wrap:wrap-reverse;
-    justify-content: center;
+    display:grid;
+    grid-template-columns: repeat(10, 100px);
+    grid-gap: 50px;
+    grid-template-rows: repeat(3);
+}
+.Agents {
+    width: 200px;
+    height: 200px;
 }
 
 
 @media screen and (max-width:375px){
 
     .allAgents {
-        display:flex;
-        flex-wrap: wrap;
-        justify-content: center;
-        max-width:100px;
-        max-height:100px;
+        display:grid;
+    grid-template-columns: repeat(3, 100px);
+    grid-gap: 0px;
+    grid-template-rows: repeat(7);
+    justify-items: end;
+
     }
 
+    .Agents {
+        width: 80px;
+        height: 80px;
+    }
+    
 }
     

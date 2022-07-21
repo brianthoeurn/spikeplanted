@@ -3,11 +3,12 @@ import React, { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 
 const ThisAgent = () => {
-    const [agent, setAgent] = useState([]); const { uuid } = useParams();
-    const [retrieved, setRetrieved] = useState(false)
+    const [agent, setAgent] = useState([]);
+    const { uuid } = useParams();
+    const [retrieved, setRetrieved] = useState(false);
 
     useEffect(() => {
-    getAgent()
+        getAgent()
     }, []);
 
     const getAgent = () => {
@@ -22,7 +23,6 @@ const ThisAgent = () => {
         .then(data => {
             setAgent(data.data)
             setRetrieved(true)
-            console.log(data)
         })
         .catch((err) => console.log(err))
       
