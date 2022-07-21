@@ -4,6 +4,7 @@ import { Link } from "react-router-dom";
 
 function AgentList() {
   const [allAgents, setallAgents] = useState([]);
+
   const loadAgent = () => {
     fetch("https://valorant-api.com/v1/agents/")
       .then((res) => res.json())
@@ -18,7 +19,7 @@ function AgentList() {
     if (item.isPlayableCharacter === true)
       return (
         <div key={item.fullPortrait}>
-          <Link to={"/agents" + item.fullPortrait}>
+          <Link to={"/agents/" + item.uuid}>
             <img className="allAgents" src={item.fullPortrait} alt="test"></img>
           </Link>
         </div>
