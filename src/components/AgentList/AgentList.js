@@ -19,7 +19,9 @@ function AgentList() {
     if (picture.isPlayableCharacter === true)
       return (
         <div key={picture.fullPortrait}>
+          
           <Link to={"/agents/" + picture.uuid}>
+            <p>{picture.displayName}</p>
               <img className="Agents" src={picture.fullPortrait} alt="test"/>
           </Link>
         </div>
