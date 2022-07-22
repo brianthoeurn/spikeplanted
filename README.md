@@ -17,3 +17,6 @@ This project was made with the intention to provide general information about th
 
 https://spikeplanted.netlify.app/
 
+### API Used 
+
+https://valorant-api.com/
