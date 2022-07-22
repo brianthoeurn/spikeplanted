@@ -15,7 +15,7 @@ function App() {
               <Link to="/"> <h1>Home</h1> </Link>
               <Link to="/agentlist"> <h1>Agents</h1> </Link>
               <Link to="/arsenal">  <h1>Arsenal</h1>  </Link>
-          </nav>
+           </nav>
       </div>
       <main>
         <Routes>

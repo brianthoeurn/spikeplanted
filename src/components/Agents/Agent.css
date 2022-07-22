@@ -1,0 +1,19 @@
+.AgentPic {
+    width: 50%;
+    height: 50%;
+    margin: auto;
+}
+
+.agentInfo {
+    color:white;
+}
+
+.allAbilities {
+    display:flex;
+    justify-content: center;
+}
+
+.abilityIcon {
+    width:10%;
+    height:10%;
+}
