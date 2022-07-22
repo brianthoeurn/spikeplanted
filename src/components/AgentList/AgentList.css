@@ -1,30 +1,35 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+.agentListBody{
+    display:flex;
+    justify-content: center;
+    width:100vw;
+}
 .allAgents {
     display:grid;
-    grid-template-columns: repeat(10, 100px);
-    grid-gap: 50px;
-    grid-template-rows: repeat(3);
+    grid-template-columns: repeat(5, 15%);
+    width:100%;
+    grid-gap: 40px;
+    grid-template-rows: repeat(4);
+    justify-content: center;
 }
 .Agents {
-    width: 200px;
-    height: 200px;
+    width: 90%;
+    height: 90%;
 }
 
-
-@media screen and (max-width:375px){
-
-    .allAgents {
-        display:grid;
-    grid-template-columns: repeat(3, 100px);
-    grid-gap: 0px;
-    grid-template-rows: repeat(7);
-    justify-items: end;
-
-    }
-
-    .Agents {
-        width: 80px;
-        height: 80px;
-    }
-    
+.agentName {
+    font-family: 'Bebas Neue';
+    width:100%;
+    text-align: center;
 }
-    
+
+a {
+    text-decoration: none;
+    color:#F0E9B4;
+}
+
+.agentCard{
+    text-align: center;
+    display:flex;
+}
