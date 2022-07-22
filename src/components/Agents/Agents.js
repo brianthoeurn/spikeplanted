@@ -30,9 +30,12 @@ const ThisAgent = () => {
 
   return (
     <div className="agentInfo" key={'info'}>
-        <p className="agentName" key={'displayName'}>{agent.displayName}</p>
-        <img className="AgentPic" src={agent.fullPortraitV2} alt="Agent" key={'fullPort'}/>
-        <p key={'agentDescript'}>{agent.description}</p>
+      <p className="agentName" key={'displayName'}>{agent.displayName}</p>
+      <div className="Bio">
+          <p className="agentDesc" key={'agentDescript'}>{agent.description}</p>
+          <img className="AgentPic" src={agent.fullPortraitV2} alt="Agent" key={'fullPort'}/>
+      </div>
+
 
       {retrieved &&
         agent.abilities.map((ability) => {
@@ -40,8 +43,8 @@ const ThisAgent = () => {
           return (
             <div className="allAbilities">
               <img src={displayIcon} alt="display_icon" key={'icon'} className='abilityIcon'/>
-              <p key={'abilityName'}>{displayName}:</p>
-              <p key={'abilityInfo'}>{description}</p>
+              <p key={'abilityName'}>{displayName} </p>
+              <p key={'abilityInfo'}>: {description} </p>
             </div>
           );
         })}

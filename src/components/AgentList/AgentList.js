@@ -32,7 +32,7 @@ function AgentList() {
         return (
           <div key={data.fullPortrait} className="agentCard">
             <a href={data.uuid} target="_blank" rel="noreferrer">
-              <p className="agentName"key={'customAgent'}>{data.displayName}</p>
+              <p className="agentListName"key={'customAgent'}>{data.displayName}</p>
               <img className="Agents" src={data.fullPortrait} alt="test" key={'CustomAgentPic'} />
             </a>
           </div>
@@ -41,7 +41,7 @@ function AgentList() {
         return (
           <div key={data.fullPortrait} className="agentCard">
             <Link to={"/agents/" + data.uuid}>
-              <p className="agentName" key={"agentName"}>
+              <p className="agentListName" key={"agentName"}>
                 {data.displayName}
               </p>
               <img
