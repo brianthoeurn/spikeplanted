@@ -5,9 +5,11 @@
 
 This project was made with the intention to provide general information about the game Valorant.
 
-## Wireframe
+## Pictures
+<img width="1667" alt="Screen Shot 2022-07-22 at 10 33 02 AM" src="https://user-images.githubusercontent.com/107003360/180493753-f8b02be3-e2cf-4d2d-9c99-ed1393241b58.png"><img width="1655" alt="Screen Shot 2022-07-22 at 10 33 56 AM" src="https://user-images.githubusercontent.com/107003360/180493764-abc837c3-1f6c-4c70-8f04-4a6b5028f3da.png">
 
-![wire](https://media.git.generalassemb.ly/user/43393/files/7fe556d1-f7d8-47e5-b22e-51a61be3256d)
+
+
 
 ## User Stories
 
