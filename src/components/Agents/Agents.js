@@ -23,27 +23,26 @@ const ThisAgent = () => {
       .then((data) => {
         setAgent(data.data);
         setRetrieved(true);
-        console.log(data);
+
       })
       .catch((err) => console.log(err));
   };
 
   return (
-    <div>
-      <img className="Agentpic" src={agent.fullPortraitV2} alt="Agent" />
-      <p>{agent.displayName}</p>
-      <p>{agent.description}</p>
+    <div className="agentInfo" key={'info'}>
+        <p className="agentName" key={'displayName'}>{agent.displayName}</p>
+        <img className="AgentPic" src={agent.fullPortraitV2} alt="Agent" key={'fullPort'}/>
+        <p key={'agentDescript'}>{agent.description}</p>
 
       {retrieved &&
-        agent.abilities.map((ability, i) => {
-          const { slot, displayName, description, displayIcon } = ability;
+        agent.abilities.map((ability) => {
+          const { displayName, description, displayIcon } = ability;
           return (
-            <React.Fragment key={i}>
-              <img src={displayIcon} alt="display_icon" />
-              <p>Ability Slot: {slot}</p>
-              <p>Display Name: {displayName}</p>
-              <p>descriptiont: {description}</p>
-            </React.Fragment>
+            <div className="allAbilities">
+              <img src={displayIcon} alt="display_icon" key={'icon'} className='abilityIcon'/>
+              <p key={'abilityName'}>{displayName}:</p>
+              <p key={'abilityInfo'}>{description}</p>
+            </div>
           );
         })}
     </div>

@@ -10,12 +10,11 @@ function AgentList() {
       .then((res) => res.json())
       .then((data) => {
         const customData = data.data;
-        console.log(data.data);
         customData.push({
           uuid: "https://www.linkedin.com/in/brianmonirath",
           displayName: "Monirath",
           fullPortrait:
-            "https://cdn.discordapp.com/attachments/853891866575896586/984172384191909908/unknown.png",
+            "https://i.pinimg.com/originals/40/e6/6b/40e66b3e4fe330cd50bef3ce463b460f.png",
           isPlayableCharacter: true,
           isCustomCharacter: true,
         });
@@ -52,8 +51,8 @@ function AgentList() {
     return <></>;
   });
   return (
-    <div className="agentListBody">
-      <div className="allAgents">{ShowAgentList}</div>
+    <div className="agentListBody" key={'Listbody'}>
+      <div className="allAgents" key={'allAgents'}>{ShowAgentList}</div>
     </div>
   );
 }

@@ -1,13 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
 
-
-html {
-    background-color: black;
-}
-
 body{
+    background-color: black;
     margin:0;
-    overflow-x:hidden;
 }
 
 .ValCover {
@@ -21,11 +16,13 @@ body{
     justify-content: end;
     align-items: center;
 }
+
 .header {
     font-size: 50px;
     position: absolute;
     top:0%;
 }
+
 .links {
     display: flex;
     justify-content: space-around;
@@ -37,22 +34,4 @@ body{
 nav a {
     text-decoration: none;
     color:white;
-}
-
-@media screen and (max-width:375px){
-
-    .ValCover {
-        position: relative;
-        width:100%;
-        height:182px;
-    }
-
-    nav a {
-        margin:0;
-        font-size: .5em;
-    }
-
-    .links {
-        font-size: 30px;
-    }
 }
