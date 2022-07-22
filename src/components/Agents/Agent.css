@@ -1,7 +1,22 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Mochiy+Pop+One&family=Permanent+Marker&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@1,300&display=swap');
+
+
+
+.Bio {
+    display: flex;
+    margin-left:10%
+}
+
+.agentDesc {
+    width: 30%;
+    font-size: 30px;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
 .AgentPic {
-    width: 50%;
-    height: 50%;
-    margin: auto;
+    width: 30%;
+    height: 30%;
 }
 
 .agentInfo {
@@ -10,10 +25,16 @@
 
 .allAbilities {
     display:flex;
-    justify-content: center;
 }
 
 .abilityIcon {
     width:10%;
     height:10%;
+}
+
+.agentName {
+    font-size: 40px;
+    font-family: 'Permanent Marker', cursive;
+    text-align: center;
+    color:#F0E9B4;
 }

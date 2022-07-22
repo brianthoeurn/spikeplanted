@@ -1,6 +1,5 @@
 # Welcome to Spike Planted
 ![spike](https://i.pinimg.com/originals/7b/7b/d5/7b7bd5d5bc01e9e403782a212a7f4e29.gif)
-This project was made with the intention to provide general information about the game Valorant.
 
 ## Project Description
 
@@ -12,6 +11,19 @@ This project was made with the intention to provide general information about th
 
 ## User Stories
 
+## Goals
+
+### MVP Goals
+- Provide Description of game
+- Have a list of playable Agents
+- Information on each agent and their abilities
+- List of Weapon
+
+### Stretch Goals
+- Maps
+- Include voicelines/videos of agent
+- Sprays
+- Extra Weapon information
 
 ### Link to live site
 

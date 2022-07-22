@@ -1,5 +1,5 @@
+import "./Arsenal.css";
 import { useEffect, useState } from "react";
-import { Link } from "react-router-dom";
 
 function Arsenal() {
   const [allArsenal, setallArsenal] = useState([]);
@@ -15,15 +15,25 @@ function Arsenal() {
   }, []);
 
   let ShowArsenalList = allArsenal.map((item) => {
-      return (
-        <div key={item.displayIcon}>
-          <Link to={"/agents/" + item.displayName}>
-            <img className="allAgents" src={item.displayIcon} alt="test"></img>
-          </Link>
-        </div>
-      );
+    return (
+      <div key={item.displayIcon} className="wepCard">
+        <p className="wepName" key={"wepName"}>
+          {item.displayName}
+        </p>
+        <img
+          className="Weapon"
+          src={item.displayIcon}
+          alt="test"
+          key={"wepIcon"}
+        ></img>
+      </div>
+    );
   });
-  return <div>{ShowArsenalList}</div>;
+  return (
+    <div className="wepBody">
+      <div className="allWep">{ShowArsenalList}</div>
+    </div>
+  );
 }
 
 export default Arsenal;
