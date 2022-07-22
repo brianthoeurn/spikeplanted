@@ -1,25 +1,58 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+
+html {
+    background-color: black;
+}
 
 body{
     margin:0;
+    overflow-x:hidden;
+}
+
+.ValCover {
+    background-image: url("./valorant_cover.png");
+    background-size:cover;
+    background-repeat: no-repeat;
+    width:100%;
+    height:400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    align-items: center;
+}
+.header {
+    font-size: 50px;
+    position: absolute;
+    top:0%;
+}
+.links {
+    display: flex;
+    justify-content: space-around;
+    font-family: 'Bebas Neue';
+    font-size: 20px;
+    width: 100%;
 }
 
 nav a {
     text-decoration: none;
-    display: inline-block;
+    color:white;
 }
 
 @media screen and (max-width:375px){
 
-.ValCover {
-    position: relative;
-    width:100%;
-    height:182px;
-    
-}
+    .ValCover {
+        position: relative;
+        width:100%;
+        height:182px;
+    }
 
-nav a {
-    padding: 0px 0px 0px 40px;
-    margin:0;
-    font-size: .5em;
-}
+    nav a {
+        margin:0;
+        font-size: .5em;
+    }
+
+    .links {
+        font-size: 30px;
+    }
 }
