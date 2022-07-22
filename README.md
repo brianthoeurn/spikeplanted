@@ -11,6 +11,10 @@ This project was made with the intention to provide general information about th
 
 ## User Stories
 
+- As a user I want to find the general inforamtion on Valorant
+- The information would be about the playable characters, what they do and what they specialize in
+- Other information would probably be weapons, maps, and if there are any cosmetics in the game.
+
 ## Goals
 
 ### MVP Goals
@@ -25,10 +29,10 @@ This project was made with the intention to provide general information about th
 - Sprays
 - Extra Weapon information
 
-### Link to live site
+## Link to live site
 
 https://spikeplanted.netlify.app/
 
-### API Used 
+## API Used 
 
 https://valorant-api.com/
